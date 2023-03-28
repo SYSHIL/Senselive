@@ -20,7 +20,7 @@ const firebaseConfig = {
   const database = getDatabase(app);
   
   // Get a reference to the root node
-const rootRef = ref(database);
+// const rootRef = ref(database);
 const dbRef = ref(getDatabase());
 function getData(rakeId){
   get(child(dbRef, `rakes/${rakeId}`)).then((snapshot) => {

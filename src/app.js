@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 app.get("/getData", (req, res) => {
   const rakeId = req.query.rakeId;
   const data = getData(rakeId)
-  res.render("index",{data})
+  res.send({data})
 });
 
 const port = process.env.PORT || 3000;
